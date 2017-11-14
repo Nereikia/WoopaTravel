@@ -1,0 +1,201 @@
+// reset
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+// reset over
+
+
+.header{
+	background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+    
+}
+.header-nav{
+      display:flex;
+    justify-content: space-between;
+   // height:90px;
+    background-color: rgba(0,0,0,0.4);
+    padding-top:20px;
+    padding-bottom: 20px;
+    img{
+    margin-left: 50px; }
+}
+.main-nav{
+    
+    margin-left:100px;
+    padding-right:80px;
+    margin-top:30px;
+    width: ~"calc(100% - 100px)";
+        ul{
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        li > *{ 
+            text-decoration: none;
+            font-family: Verdana;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin:0 5px;
+            white-space: nowrap;
+            color:white; }
+    
+        }
+}
+
+.title h2{
+    text-align: center;
+    padding:240px 0 190px 0;
+    color:white;
+    font-family:Verdana;
+    font-size:45px;
+}
+
+
+.search-type{
+    margin-left:50px;
+        .button{
+            border:none;
+            height:50px;
+            width:270px;
+            background-color: #474a45;
+            font-size: 18px;
+            font-family:Verdana;
+            color:white;
+            text-transform: uppercase;
+            padding:inherit; }
+        .button2{
+            background-color: #ff3d3e; }
+}
+.quick-search{
+    margin-left:50px;
+    margin-right:50px;
+    margin-bottom:50px;
+    background-color: #4a4b46;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    .selection{
+        display:flex;
+        flex-wrap: nowrap; }
+        select{
+            border:none;
+            height:50px;
+            width:190px;
+            background-color: #5b5c57;
+            font-size: 18px;
+            font-family:Roboto;
+            color:white;
+            text-transform: uppercase;
+            margin:25px 15px 25px 30px; 
+            option{
+                text-align: center; } }
+    .search-submit{
+            border:none;
+            height:50px;
+            width:270px;
+            background-color: #75dee5;
+            font-size: 20px;
+            font-family:Verdana;
+            color:white;
+            text-transform: uppercase;
+            margin:25px 25px; }
+}
+#best-offers{
+    h2{
+        font-family: Verdana;
+        font-size: 35px;
+        margin:50px auto;
+        text-align: center; }
+    p{
+        font-size:25px;
+        font-family:Amiko;
+        text-align: center;
+        margin-bottom:15px;
+    }
+
+.offers{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+.offer{
+    width:683px;
+    background-repeat: no-repeat;
+    p{
+        margin-left:50px;
+        font-family:Roboto;
+        font-size: 15px;
+        color:white;
+        text-align: left;}
+    h3{
+        margin-left:50px;
+        margin-top:90px;
+        font-family:Roboto;
+        font-size: 20px;
+        color:white;
+    }
+    h4{
+        margin:40px 50px;
+        font-family:Verdana;
+        font-size: 40px;
+        color:white;
+    }
+    h5{
+        margin:25px 50px;
+        font-family:Verdana;
+        font-size: 15px;
+        color:white;
+    }
+    button{
+        height:50px;
+        width:135px;
+        margin:0 0 40px 50px;
+        font-family:Verdana;
+        font-size: 25px;
+        color:white;
+        background-color: #29aeae;
+        border:none;
+        padding:inherit;
+    }
+    }}
