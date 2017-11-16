@@ -55,7 +55,6 @@ table {
 .header-nav{
       display:flex;
     justify-content: space-between;
-   // height:90px;
     background-color: rgba(0,0,0,0.4);
     padding-top:20px;
     padding-bottom: 20px;
@@ -178,6 +177,7 @@ table {
     background-repeat: no-repeat;
     p{
         margin-left:50px;
+        margin-right:50px;
         font-family:Roboto;
         font-size: 15px;
         color:white;
@@ -185,9 +185,11 @@ table {
     h3{
         margin-left:50px;
         margin-top:90px;
+        margin-right:50px;
         font-family:Roboto;
         font-size: 20px;
         color:white;
+        text-transform: uppercase;
     }
     h4{
         margin:40px 50px;
@@ -204,7 +206,7 @@ table {
     button{
         height:50px;
         width:135px;
-        margin:0 0 40px 50px;
+        margin:0 0 30px 50px;
         font-family:Verdana;
         font-size: 25px;
         color:white;
@@ -212,7 +214,27 @@ table {
         border:none;
         padding:inherit;
     }
+    span{
+        text-transform: uppercase;
+        margin-left: 10px;
+    }
+    sup{
+        font-size:26px;; 
+        vertical-align:top;
+    }
+    .offers-icons{
+        margin-left:50px;
+        margin-right:50px;
+        >*{
+            margin-right:10px;
+        }
+    }
     }}
+.offer-right{
+    h3,h5,h4,button,.offers-icons{
+        text-align: right;
+    }
+}
 #all-destinations{
     button{
         height: 52px;
@@ -259,9 +281,10 @@ table {
         background-size: cover;
         background-position: center;
         
+        
         .story{
             width:550px;
-            background-color: rgba(62,56,49,0.4);
+            //background-color: rgba(62,56,49,0.4);
             h2{
                 font-family: Verdana;
                 font-size: 35px;
@@ -274,6 +297,7 @@ table {
                 font-size: 20px;
                 color:white;
                 margin: 70px 0 70px 80px;
+                line-height: 25px;
             }
             h3{
                 font-family: Verdana;
@@ -294,12 +318,17 @@ table {
     }
 }
 .blog{
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(../Images/machupichu.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display:block;
     padding-top:70px;
-    
     h2{
         font-family: Verdana;
         font-size: 35px;
@@ -307,7 +336,7 @@ table {
         text-transform: uppercase;
         text-align: center;}
     .post{
-        margin:100px auto;
+        margin:100px auto 0;
         display:flex;
         img{
             margin:0 130px 130px 130px;
@@ -339,4 +368,91 @@ table {
         }
         
     }
+}
+.instagram{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.left{
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url(../Images/beach.jpg);
+    background-repeat: no-repeat;
+    //display:flex;
+    img{
+        margin:40px 0 30px 60px;
+        
+    }
+    .footer-form{
+        margin-left:160px;
+        margin-right:170px;
+        .subscribe{
+            label{
+                font-family:Verdana;
+                font-size: 18px;
+                color:white;
+                text-transform: uppercase;
+                }
+            input{
+                margin:30px 0 20px 0;
+                height: 45px;
+                width: 350px;
+                border:none;
+                font-size:18px;
+                
+                }
+            button{
+                margin-bottom: 115px;
+                border:none;
+                height:40px;
+                width:170px;
+                background-color: #75dee5;
+                font-size: 20px;
+                font-family:Verdana;
+                color:white;
+                text-transform: uppercase;
+            }
+            }   
+            }
+    
+}
+.right{
+    background-color: #000;
+    background-size: cover;
+    color:white;
+    display:flex;
+    justify-content: space-around;
+    padding-left:45px;
+    height:390px;
+    width:635px;
+    >*{
+        margin-right:70px;
+    }
+    h2{
+        font-family:Verdana;
+        font-size: 18px;
+        color:white;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+        white-space: nowrap;
+        margin-top:90px;
+    }
+    li >*, >*{
+        text-decoration: none;
+        font-family:Verdana;
+        font-size: 14px;
+        color:white;
+        line-height: 20px;
+        white-space: nowrap;
+    }
+}
+footer{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
