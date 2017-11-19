@@ -49,6 +49,7 @@ table {
 	background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
+    
   
     
 }
@@ -71,6 +72,9 @@ table {
         display:flex;
         justify-content: space-between;
         flex-wrap: nowrap;
+            @media all and (max-width:940px){
+                display:block;
+            }
         li > *{ 
             text-decoration: none;
             font-family: Verdana;
@@ -78,7 +82,13 @@ table {
             text-transform: uppercase;
             margin:0 5px;
             white-space: nowrap;
-            color:white; }
+            color:white; 
+             @media all and (max-width:1140px){
+                font-size:12px;
+            }
+            
+            
+            }
     
         }
 }
@@ -89,6 +99,7 @@ table {
     color:white;
     font-family:Verdana;
     font-size:45px;
+   
 }
 
 
@@ -115,9 +126,16 @@ table {
     display:flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+     @media all and (max-width:1140px){
+                flex-wrap: wrap;
+            }
     .selection{
         display:flex;
-        flex-wrap: nowrap; }
+        flex-wrap: nowrap;
+        @media all and (max-width:830px){
+                flex-wrap: wrap;
+                                        }
+                }
         select{
             border:none;
             height:50px;
@@ -173,7 +191,8 @@ table {
     flex-wrap: wrap;
     justify-content: center; }
 .offer{
-    width:683px;
+    width:50%;
+    height: auto;
     background-repeat: no-repeat;
     p{
         margin-left:50px;
@@ -256,9 +275,12 @@ table {
     justify-content: center;
     flex-wrap: wrap;
     .destination{
+        width:20%;
         img{
             display:block;
             margin:0 auto;
+            width: 100%;
+            height:auto;
             }
         h6{
             font-family: Verdana;
@@ -272,19 +294,18 @@ table {
             display:block;
             margin:0 auto;
             text-align: center;
+            width:auto;
         }
 }
 }
-#recommend{
+
+    
     .recomendation{
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        
         
         
         .story{
             width:550px;
-            //background-color: rgba(62,56,49,0.4);
             h2{
                 font-family: Verdana;
                 font-size: 35px;
@@ -316,7 +337,7 @@ table {
         }
         
     }
-}
+
 .blog{
     background: 
     linear-gradient(
@@ -338,8 +359,11 @@ table {
     .post{
         margin:100px auto 0;
         display:flex;
+        justify-content: space-around;
         img{
             margin:0 130px 130px 130px;
+            width:50%;
+            height: auto;
         }
         h3{
         font-family: Verdana;
@@ -364,7 +388,7 @@ table {
         }
         .story{
             margin:0 150px 125px 0;
-            min-width:375px;
+            width:50%;
         }
         
     }
@@ -372,7 +396,15 @@ table {
 .instagram{
     display:flex;
     justify-content: center;
-    flex-wrap: wrap;
+    div {
+        width:25%;
+        >*{
+            width:100%;
+            height:auto;
+    }
+    }
+    
+        
 }
 
 .left{
