@@ -21,13 +21,13 @@ font-family: 'Amiko', sans-serif;-->
                </div>
 		        <nav class="main-nav">
 				    <ul>
-                        <li><a href=#>Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href=#>About us</a></li>
-                        <li><a href=#>Best offers</a></li>
-                        <li><a href=#>All Destinations</a></li>
-                        <li><a href=#>Reviews</a></li>
-                        <li><a href=#>Blog</a></li>
-                        <li><a href=#>Contacts</a></li>
+                        <li><a href=#best>Best offers</a></li>
+                        <li><a href=#all-destinations>All Destinations</a></li>
+                        <li><a href=#recommend>Reviews</a></li>
+                        <li><a href=#blog>Blog</a></li>
+                        <li><a href=#contacts>Contacts</a></li>
                     </ul>
 
 		          </nav>
@@ -41,17 +41,17 @@ font-family: 'Amiko', sans-serif;-->
             </div>
             <form class="quick-search">
                 <div class="selection">
-                    <select name="location" >
-                        <option>Where to</option>
+                    <select name="location"  >
+                        <option disabled selected>Where to</option>
                         <option>Lietuva</option>
                     </select>
-                    <select name="Time" >
-                        <option>Date</option>
-                        <option>Lietuva</option>
-                    </select>
+                    <input type="date" placeholder="Date">
                     <select name="budget" >
-                        <option>budget</option>
-                        <option>Lietuva</option>
+                        <option disabled selected>budget</option>
+                        <option>500</option>
+                        <option>1000</option>
+                        <option>1500</option>
+                        <option>2000</option>
                     </select>
                 </div>
                 <div class="submition">
@@ -61,13 +61,13 @@ font-family: 'Amiko', sans-serif;-->
             </form>
         </div>
     </header>
-    <section id="best-offers">
+    <section id="best" class="best-offers">
         <div class="title1">
             <h2>Best offers</h2>
             <p>Whether you’re working internationally, relocating or traveling with your family, our serviced apartments will delight you with</p>
         </div>
         <div class="offers">   
-            <div class="offer offer-left" style="background: linear-gradient(to right, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)), url(Images/Vietnam.jpg) no-repeat">
+            <div class="offer offer-left" style="background: linear-gradient(to right, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)), url(Images/Vietnam.jpg) center / cover no-repeat; ">
                 <h3>vietnam</h3>
                 <h5>2017/11/30<span>1 week</span></h5> 
                 <div class="offers-icons">
@@ -78,17 +78,17 @@ font-family: 'Amiko', sans-serif;-->
                 <button type="button">More</button>
                     
             </div>
-            <div class="offer offer-right" style="background: linear-gradient(to left, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)), url(Images/Thailand.jpg) no-repeat">
-                <h3>thailand</h3>
-                <h5>2017/12/15<span>2 weeks</span></h5> 
-                <div class="offers-icons">
+            <div class="offer offer-right" style="background: linear-gradient(to left, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)), url(Images/Thailand.jpg) center / cover no-repeat;">
+                <h3 >thailand</h3>
+                <h5 >2017/12/15<span>2 weeks</span></h5> 
+                <div class="offers-icons" >
                     <img src="Images/lektuvas.png">
                     <img src="Images/lova.png">
                 </div>
-                <h4>1650 <sup>&euro;</sup></h4>
-                <button type="button">More</button>
+                <h4 >1650 <sup>&euro;</sup></h4>
+                <button  type="button">More</button>
             </div>
-            <div class="offer offer-left" style="background: linear-gradient(to right, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)), url(Images/Israel.jpg) no-repeat">
+            <div class="offer offer-left" style="background: linear-gradient(to right, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)), url(Images/Israel.jpg) center / cover no-repeat;">
                 <h3>israel</h3>
                 <h5>2017/11/15<span>5 days</span></h5> 
                 <div class="offers-icons">
@@ -98,15 +98,15 @@ font-family: 'Amiko', sans-serif;-->
                 <h4>650 <sup>&euro;</sup></h4>
                 <button type="button">More</button>
             </div>
-            <div class="offer offer-right" style="background: linear-gradient(to left, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)), url(Images/Sydney.jpg) no-repeat">
-                <h3>sydney</h3>
-                <h5>2018/01/30<span>2 weeks</span></h5> 
-                <div class="offers-icons">
+            <div class="offer offer-right" style="background: linear-gradient(to left, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)), url(Images/Sydney.jpg) center / cover no-repeat;">
+                <h3 >sydney</h3>
+                <h5 >2018/01/30<span>2 weeks</span></h5> 
+                <div class="offers-icons" >
                     <img src="Images/lektuvas.png">
                     <img src="Images/lova.png">
                 </div>
-                <h4>940 <sup>&euro;</sup></h4>
-                <button type="button">More</button>
+                <h4 >940 <sup>&euro;</sup></h4>
+                <button  style="align-self: flex-end" type="button">More</button>
             </div>
         </div> 
         
@@ -140,7 +140,7 @@ font-family: 'Amiko', sans-serif;-->
     
     </section>
     <section id="recommend">
-        <div class="recomendation" style="background: linear-gradient(to right, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0)), url(Images/Recommendation.jpg) no-repeat center">
+        <div class="recomendation" style="background: linear-gradient(to right, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0)), url(Images/Recommendation.jpg) center / cover no-repeat ">
             <div class="story">
                 <h2>travelers recommend</h2>
                 <p>I cannot speak highly enough about our 3 week trip to this place and the services provided by this travel company. Everything was seamless. The private guides were interesting and knowledgable. We felt that they were more than just guides.</p>
@@ -185,8 +185,8 @@ font-family: 'Amiko', sans-serif;-->
         </div>
     
     </section>
-    <footer>
-    <section >
+    <footer id="contacts">
+    <section style="width:50%">
         <div class="left">
             <div clas="footer-logo">
                 <a href=#><img src="Images/logo-footer.png"></a>
@@ -201,16 +201,16 @@ font-family: 'Amiko', sans-serif;-->
             
         </div>
     </section>
-    <section>
-        <div class="right">
-            <div >
+    <section style="width:50%">
+        <div class="right" style="width:100%">
+            <div style="margin-left:45px;">
                 <h2>meniu</h2>
                 <ul>
                     <li><a href=#>About us</a></li>
-                    <li><a href=#>Best offers</a></li>
-                    <li><a href=#>All Destinations</a></li>
-                    <li><a href=#>Reviews</a></li>
-                    <li><a href=#>Blog</a></li>
+                    <li><a href=#best>Best offers</a></li>
+                    <li><a href=#all-destinations>All Destinations</a></li>
+                    <li><a href=#recommend>Reviews</a></li>
+                    <li><a href=#blog>Blog</a></li>
                 </ul>
             </div>
             <div>
