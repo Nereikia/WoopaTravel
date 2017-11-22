@@ -56,7 +56,7 @@ table {
 .header-nav{
       display:flex;
     justify-content: space-between;
-    background-color: rgba(0,0,0,0.4);
+    //background-color: rgba(0,0,0,0.4);
     padding-top:20px;
     padding-bottom: 20px;
     img{
@@ -83,6 +83,7 @@ table {
             margin:0 5px;
             white-space: nowrap;
             color:white; 
+            opacity:0.7;
              @media all and (max-width:1140px){
                 font-size:12px;
             }
@@ -93,18 +94,43 @@ table {
         }
 }
 
-.title h2{
+.title{
+    h2{
     text-align: center;
-    padding:240px 0 190px 0;
+    padding:240px 0 50px 0;
     color:white;
     font-family:Verdana;
-    font-size:45px;
-   
+    font-size:45px; }
+    p{
+        font-family:roboto;
+        font-size:25px;
+        color:white;
+        margin:0 auto 50px;
+        text-align: center;
+        max-width:620px;
+    }
+    
 }
-
+.melynas{
+    text-align: center;
+    button{
+        height: 52px;
+        width:260px;
+        border: none;
+        background-color: #75dee5;
+        font-family: Verdana;
+        font-size: 18px;
+        color:white;
+        margin:0 auto 140px;
+        padding:inherit;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
 
 .search-type{
     margin-left:50px;
+    margin-top:140px;
         .button{
             border:none;
             height:50px;
@@ -164,7 +190,8 @@ table {
         font-family: Verdana;
         font-size: 35px;
         margin:50px auto;
-        text-align: center; }
+        text-align: center;
+        text-transform: uppercase;}
     p{
         font-size:25px;
         font-family:Amiko;
@@ -495,4 +522,141 @@ footer{
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+.our-staff{
+    h2{
+        font-family: Verdana;
+        font-size: 35px;
+        margin:50px auto;
+        text-align: center;
+        text-transform: uppercase;}
+    p{
+        font-size:25px;
+        font-family:Amiko;
+        text-align: center;
+        margin-bottom:15px;
+        margin:0 30px 50px 30px;
+    }}
+.staff{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom:90px;
+}
+.member{
+    display:flex;
+    width:45%;
+    background-color:#2ad7ed;
+    margin:5px;
+    
+    .member-info{
+        
+    }
+}
+.member-red{
+        background-color: #ff3d3e;
+    }
+#why-choose{
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../Images/why-choose-us.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    h2{
+        font-family: Verdana;
+        font-size: 35px;
+        padding:115px 0 50px 0;
+        text-align: center;
+        text-transform: uppercase;
+        color:white;
+    }
+    .why-choose{
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .why{
+            width:325px;
+            height:215px;
+            border:2px solid #2ad7ed;
+            margin:100px 35px 125px 35px;
+            h6{
+                font-family: verdana;
+                font-size: 20px;
+                color: white;
+                text-align: center;
+                text-transform: uppercase;
+                margin-top:75px;
+            }
+            p{
+                font-family: verdana;
+                font-size: 14px;
+                color: white;
+                text-align: center;
+                width:210px;
+                margin:25px auto;
+                line-height: 20px;
+            }
+            
+        }
+    }
+}
+#our-success{
+    h2{
+        font-family: Verdana;
+        font-size: 35px;
+        padding:115px 0 50px 0;
+        text-align: center;
+        text-transform: uppercase;
+        color:grey;
+    }
+    .our-success{
+        display:flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        .success{
+            width:25%;
+            height:auto;
+            margin:100px 0 125px 0;
+            h6{
+                font-family: verdana;
+                font-size: 20px;
+                color: black;
+                text-align: center;
+                text-transform: capitalize;
+                margin-top:75px;
+            }
+            
+            
+        }
+    }
+}
+#contact-us{
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../Images/contact-us.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .contact-us{
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .working-hours,.contact-form{
+            h3{
+                font-family: verdana;
+                font-size: 25px;
+                color: white;
+                text-transform: capitalize;
+                text-align: center;
+                margin:115px 0 500px 0;
+            }
+        }
+    }
 }
