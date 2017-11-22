@@ -131,6 +131,10 @@ table {
 .search-type{
     margin-left:50px;
     margin-top:140px;
+    display:flex;
+    @media all and (max-width:830px){
+                flex-direction: column-reverse;
+            }
         .button{
             border:none;
             height:50px;
@@ -149,11 +153,17 @@ table {
     margin-right:50px;
     margin-bottom:50px;
     background-color: #4a4b46;
+    opacity:0.9;
     display:flex;
     justify-content: space-between;
     flex-wrap: nowrap;
      @media all and (max-width:1140px){
                 flex-wrap: wrap;
+         width:725px;
+            }
+    @media all and (max-width:830px){
+                flex-wrap: wrap;
+         width:320px;
             }
     .selection{
         display:flex;
@@ -173,7 +183,8 @@ table {
             text-transform: uppercase;
             margin:25px 15px 25px 30px;
             option{
-                text-align: center; } }
+                text-align: center;
+                } }
     .search-submit{
             border:none;
             height:50px;
@@ -569,7 +580,7 @@ footer{
     h2{
         font-family: Verdana;
         font-size: 35px;
-        padding:115px 0 50px 0;
+        padding:115px 0 100px 0;
         text-align: center;
         text-transform: uppercase;
         color:white;
@@ -578,11 +589,12 @@ footer{
         display:flex;
         justify-content: center;
         flex-wrap: wrap;
+        padding-bottom:55px;
         .why{
             width:325px;
             height:215px;
             border:2px solid #2ad7ed;
-            margin:100px 35px 125px 35px;
+            margin:0 35px 70px 35px;
             h6{
                 font-family: verdana;
                 font-size: 20px;
