@@ -317,14 +317,18 @@ table {
         width:260px;
         border: none;
         background-color: #ff3d3e;
-        font-family: Verdana;
-        font-size: 18px;
-        color:white;
         margin:0 auto 50px;
         padding:inherit;
         text-align: center;
         display:block;
         text-transform: uppercase;
+        a{
+            text-decoration: none;
+            font-family: Verdana;
+            font-size: 18px;
+            color:white;
+        }
+        
     }
 }
 .all-destinations{
@@ -464,7 +468,70 @@ table {
         
 }
 
-.left{
+
+
+#contacts{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .right{
+    background-color: #000;
+    background-size: cover;
+    color:white;
+    display:flex;
+    justify-content: space-around;
+    width: 50%;
+        div{
+            width:30%;
+        }
+    h2{
+        font-family:Verdana;
+        font-size: 18px;
+        color:white;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+        white-space: nowrap;
+        margin-top:90px;
+    }
+    li >*, >*{
+        text-decoration: none;
+        font-family:Verdana;
+        font-size: 14px;
+        color:white;
+        line-height: 20px;
+        white-space: nowrap;
+    }
+        .social-media{
+            text-align: center;
+            li{
+                             a {
+                            font-size: 0;
+                            line-height: 0;
+                            text-decoration: none;
+                            &:before {
+                                font-family: 'icomoon';
+                                font-size: 12px;
+                                color: #FFF;
+                                margin:5px;
+                                border:solid 2px white;
+                                border-radius: 50%;
+                                padding:7px;
+                                line-height:35px;
+                                
+                                 }
+                            }
+                        &.facebook a:before {
+                          content: '\ea90';}
+                        &.instagram a:before {
+                          content: '\ea90';}
+                        &.pinterest a:before {
+                          content: '\ea90';}
+                        &.traveladvisor a:before {
+                          content: '\ea90';}
+                        }
+        }
+}
+    .left{
     background: 
     linear-gradient(
       rgba(0, 0, 0, 0.9),
@@ -474,7 +541,7 @@ table {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width:100%;
+    width:50%;
     img{
         margin:40px 0 30px 60px;
         
@@ -496,6 +563,7 @@ table {
                 width: 350px;
                 border:none;
                 font-size:18px;
+                padding-left:10px;
                 
                 }
             button{
@@ -513,39 +581,6 @@ table {
             }
     
 }
-.right{
-    background-color: #000;
-    background-size: cover;
-    color:white;
-    display:flex;
-    justify-content: space-around;
-    height:390px;
-    width:635px;
-    >*{
-        margin-right:70px;
-    }
-    h2{
-        font-family:Verdana;
-        font-size: 18px;
-        color:white;
-        text-transform: uppercase;
-        margin-bottom: 35px;
-        white-space: nowrap;
-        margin-top:90px;
-    }
-    li >*, >*{
-        text-decoration: none;
-        font-family:Verdana;
-        font-size: 14px;
-        color:white;
-        line-height: 20px;
-        white-space: nowrap;
-    }
-}
-footer{
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 .our-staff{
     h2{
